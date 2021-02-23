@@ -1,0 +1,8 @@
+.landing {
+    color: white;
+    background: url('../../images/background.JPEG') no-repeat center fixed;
+    background-size: cover;
+    height: auto;
+    width: auto;
+    padding-top: 100px;
+}
