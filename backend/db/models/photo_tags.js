@@ -6,6 +6,8 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Photo_Tags.associate = function(models) {
     // associations can be defined here
+    Photo_Tags.belongsToMany(models.Photos, {foreignKey: 'photoId'});
+    Photo_Tags.belongsToMany(models.Tags, {foreignKey: 'tag'});
   };
   return Photo_Tags;
 };

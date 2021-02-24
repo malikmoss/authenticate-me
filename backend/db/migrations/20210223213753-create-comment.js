@@ -9,12 +9,17 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       photoId: {
-        type: Sequelize.INTEGER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: {model: 'Photos'}
       },
       authorId: {
-        type: Sequelize.INTEGER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: {model: 'Users'}
       },
       body: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       createdAt: {
