@@ -2,7 +2,20 @@
     color: white;
     background: url('../../images/background.JPEG') no-repeat center fixed;
     background-size:cover;
+    background-color: black;
     height: auto;
     width: auto;
+    text-align: center;
     padding-top: 100px;
+}
+
+.landing-container {
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url('../../images/background.JPEG') no-repeat center fixed;
+    display: inline-block;
+    margin: 50px 50px 50px 50px;
+    position: relative;
+    margin-bottom: 400px;
 }

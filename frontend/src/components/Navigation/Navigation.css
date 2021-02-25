@@ -1,0 +1,17 @@
+button {
+    margin: 10px;
+    height: 40px;
+    width: 275px;
+    right: 150px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 0.25em;
+    color: white;
+    font-size: 18px;
+}
+
+.navbar {
+    background-color:black;
+    font: white;
+
+}
