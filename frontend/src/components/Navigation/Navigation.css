@@ -1,17 +1,29 @@
-button {
-    margin: 10px;
-    height: 40px;
-    width: 275px;
-    right: 150px;
-    background-color: black;
-    border: 2px solid black;
-    border-radius: 0.25em;
-    color: white;
-    font-size: 18px;
-}
-
 .navbar {
-    background-color:black;
-    font: white;
-
-}
+    background: #000000;
+    opacity: 0.9;
+  
+    border-bottom: 1px solid#faf4d3;
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navbar a:hover {
+    color: #000000;
+    position: sticky;
+    background: #ffffff;
+  }
+  
+  .navbar a {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background: #000000;
+    padding: 5px;
+    border-radius: 4px;
+  }

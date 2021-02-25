@@ -4,8 +4,9 @@ import { Route, Switch } from "react-router-dom";
 import * as sessionActions from "./store/session";
 import SignupFormPage from "./components/SignupFormPage";
 import Navigation from "./components/Navigation";
-import LoginFormPage from "./components/LoginFormPage/index"
+import LoginFormPage from "./components/LoginFormPage"
 import LandingPage from "./components/LandingPage/index"
+import ExplorePage from "./components/ExplorePage"
 
 function App() {
   const dispatch = useDispatch();
@@ -25,8 +26,11 @@ function App() {
           <Route path="/signup">
             <SignupFormPage />
           </Route>
-          <Route path="/login">
+          <Route exact path="/login">
             <LoginFormPage />
+          </Route>
+          <Route path="/explore">
+            <ExplorePage />
           </Route>
         </Switch>
       )}

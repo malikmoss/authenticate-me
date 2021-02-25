@@ -39,7 +39,7 @@ function LoginFormPage() {
             </ul>
 
             <div className="email-container">
-            <label className="email-label">Username or Input</label>
+            <label className="email-label">Username or Email</label>
               <div>
               <input
                 type="text"
