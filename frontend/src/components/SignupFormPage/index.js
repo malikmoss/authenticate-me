@@ -29,48 +29,69 @@ function SignupFormPage() {
   };
 
   return (
+    <div className="signup-page">
+    <div className="signup-container">
+      <div className="header-container">
+        <h1>Log In</h1>
+      </div>
+
     <form onSubmit={handleSubmit}>
       <ul>
         {errors.map((error, idx) => <li key={idx}>{error}</li>)}
       </ul>
-      <label>
-        Email:
-        <input
-          type="text"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-      </label>
-      <label>
-        Username:
+
+      <div className="email-container">
+            <label className="email-label">Email</label>
+              <div>
+              <input
+                type="text"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              /> 
+            </div>
+            </div>
+
+      <div className='username-container'>
+      <label className='username-label'>Username:</label>
+      <div>
         <input
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           required
         />
-      </label>
-      <label>
-        Password:
+        </div>
+        </div>
+      
+      <div className="password-container">
+      <label calssName='password-label'>Password:</label>
+      <div>
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-      </label>
-      <label>
-        Confirm Password:
+      </div>
+      </div>
+
+      <div className='confirmpw-container'>
+      <label className='confirmpw-label'>Confirm Password:</label>
+      <div>
         <input
           type="password"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
           required
         />
-      </label>
+        </div>
+        </div>
+
       <button type="submit">Sign Up</button>
     </form>
+    </div>
+    </div>
   );
 }
 

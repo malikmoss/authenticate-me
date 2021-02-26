@@ -1,14 +1,17 @@
-const express = require("express");
+const express = require('express')
 const asyncHandler = require("express-async-handler");
 
-const {singlePublicFileUpload, multiplePublicFileUpload} = require("../../awsS3")
+const {singlePublicFileUpload, singleMulterUpload} = require("../../awsS3")
 const { Photo } = require("../../db/models")
-const router = express.Router()
+const router = express.Router();
 
-Router.post("/", singlePublicFileUpload("image"), asyncHandler(async (req, res) =>{
 
-    const {authorId, photoURL} = req.body
-    const newPhoto = await Photo.create({authorId, photoURL})
+router.post("/photo",singleMulterUpload("image"), asyncHandler(async (req, res) =>{
+
+    const {authorId} = req.body
+    const profilePhotoURL = await singlePublicFileUpload(req.file)
+    const newPhoto = await Photo.create({authorId:+authorId,photoURL: profilePhotoURL})
+    console.log(+authorId, "***")
 
     if (newPhoto) {
         res.json(newPhoto)
@@ -17,4 +20,15 @@ Router.post("/", singlePublicFileUpload("image"), asyncHandler(async (req, res) 
     }
 }))
 
-module.exports = router
+router.get("/:authorId", asyncHandler(async function(req, res){
+    const authorId = +req.params.authorId
+    console.log(authorId, "!!!!")
+    const photos = await Photo.findAll({where:{authorId}});
+
+    res.json(photos) 
+}))
+
+
+
+
+module.exports = router;

@@ -12,11 +12,11 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING
       },
-      albumId: {
-        allowNull: false,
-        references: { model: 'Albums' },
-        type: Sequelize.INTEGER
-      },
+      // albumId: {
+      // //   allowNull: false,
+      // //   references: { model: 'Albums' },
+      // //   type: Sequelize.INTEGER
+      // // },
       authorId: {
         allowNull: false,
         references: { model: 'Users' },
