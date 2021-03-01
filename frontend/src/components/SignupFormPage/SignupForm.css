@@ -1,7 +1,7 @@
 .signup-page {
-    background: url('../../images/background.JPEG') no-repeat center fixed;
+    /* background: url('../../images/background.JPEG') no-repeat center fixed; */
     background-size: cover;
-    background-color: black;
+    background-color: white;
     height: auto;
     width: auto;
     text-align: center;
