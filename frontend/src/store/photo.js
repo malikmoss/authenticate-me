@@ -17,7 +17,7 @@ export const createPhoto = (authorId, image) => async(dispatch) => {
     const formData = new FormData()
     formData.append("authorId", authorId)
     formData.append("image", image)
-    console.log(image, "!!!")
+    // console.log(image, "!!!")
     const res = await csrfFetch("/api/explore/photo", {
         method: "POST",
         headers: {"Content-Type": "multipart/form-data"},

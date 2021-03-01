@@ -29,7 +29,7 @@ function Navigation({ isLoaded }){
   return (
     <ul className="navbar">
       <li>
-        <h2>mcflicc</h2>
+        <h2 className="nav-title">mcflicc</h2>
         <NavLink exact to="/"><button className="home-button" type="submit">Home</button></NavLink>
         {isLoaded && sessionLinks}
       </li>

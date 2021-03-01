@@ -1,5 +1,5 @@
-.landing {
-    /* background: url('../../images/background.JPEG') center fixed; */
+/* body {
+    background: url('../../images/background.JPEG') center fixed;
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -7,7 +7,7 @@
     position: fixed;
     margin-top: -99px;
     z-index: 0;
-}
+} */
 
 /* .landing-container {
     color: white;

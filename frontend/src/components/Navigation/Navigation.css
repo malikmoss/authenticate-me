@@ -32,3 +32,91 @@
     min-height: 300px;
     min-width: 300px;
   }
+
+  .navbar-title {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    letter-spacing: -2px;
+    text-decoration: none;
+    font-size: 29px;
+    font-weight: bold;
+  }
+
+  .navbar-title {
+    text-align: left;
+  }
+
+  .navbar {
+    background: #000000;
+    opacity: 0.9;
+    border-bottom: 1px solid#faf4d3;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .navbar a:hover {
+    color: #000000;
+    /* position: sticky; */
+    background: #ffffff;
+    margin: 2px;
+  }
+  
+  .navbar a {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background: #000000;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px;
+  }
+  ul > li {
+    display: inline-block;
+    padding: 3px 15px 3px 15px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .navbar > li {
+    display: inline-block;
+  
+    padding: 3px 15px 3px 15px;
+    background: rgb(0, 0, 0);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+
+  
+  .logoutButton {
+    background: #030303;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: not-allowed;
+  }
+  .logoutButton:hover {
+    color: #000000;
+    position: sticky;
+    background: #ffffff;
+  }
+  
+  span {
+    background: black;
+  }
+  h3 {
+    display: inline-block;
+    padding: 3px 15px 3px 15px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  

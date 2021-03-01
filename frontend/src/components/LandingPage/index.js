@@ -3,7 +3,7 @@ import './LandingPage.css'
 import {useSelector, useDispatch} from 'react-redux'
 import Photos from '../backgroundImages'
 import {getPhotos} from "../../store/photo";
-
+import {Redirect, useHistory} from 'react-router-dom';
 
 function LandingPage() {
     const dispatch = useDispatch()
@@ -15,9 +15,9 @@ function LandingPage() {
     const elements = photos.map((el, i) => {
         return <Photos obj={el} key={i}/>
     })
-       return( 
+       return ( 
     <div className="landing-container">
-     <h1 className="landing">LandingPage</h1>
+     {/* <h1 className="landing">LandingPage</h1> */}
      {elements}
      </div>
     )
