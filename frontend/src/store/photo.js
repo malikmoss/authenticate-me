@@ -25,13 +25,11 @@ export const createPhoto = (authorId, image) => async(dispatch) => {
     })
     const data = await res.json();
     dispatch(setPhoto(data))
-    console.log(data, "DATA")
-}
+};
 
 export const getPhotos = (authorId) => async(dispatch) => {
     const res = await csrfFetch(`/api/explore/${authorId}`)
     const data = await res.json();
-    console.log(data)
     dispatch(setPhotos(data))
 }
 
